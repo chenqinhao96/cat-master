@@ -9,7 +9,7 @@
 
   <name>cat-master</name>
   <url>http://www.chenqinhao.com</url>
-  <description>模块管理</description>
+  <description>本体</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,5 +19,14 @@
     <module>cat-lord</module>
     <module>cat-common</module>
     <module>cat-butler</module>
+    <module>cat-castle</module>
+    <module>cat-soldier</module>
+    <module>cat-royal</module>
+    <module>cat-search</module>
+    <module>cat-cache</module>
+    <module>cat-mq</module>
+    <module>cat-mail</module>
+      <module>cat-rpc</module>
+      <module>cat-rest</module>
   </modules>
 </project>

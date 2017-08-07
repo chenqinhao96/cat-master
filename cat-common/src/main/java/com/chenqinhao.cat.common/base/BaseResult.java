@@ -1,5 +1,7 @@
 package com.chenqinhao.cat.common.base;
 
+import com.chenqinhao.cat.common.enums.ResultCode;
+
 /**
  * 返回结果类
  * Created by chenqinhao on 2017/6/23.
@@ -15,6 +17,14 @@ public class BaseResult {
     // 数据结果集
     public Object data;
 
+    public BaseResult setCode(ResultCode resultCode) {
+        this.code = resultCode.code;
+        return this;
+    }
+
+    public BaseResult() {
+    }
+
     public BaseResult(int code, String message, Object data) {
         this.code = code;
         this.message = message;
@@ -25,23 +35,26 @@ public class BaseResult {
         return code;
     }
 
-    public void setCode(int code) {
+    public BaseResult setCode(int code) {
         this.code = code;
+        return this;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public BaseResult setMessage(String message) {
         this.message = message;
+        return this;
     }
 
     public Object getData() {
         return data;
     }
 
-    public void setData(Object data) {
+    public BaseResult setData(Object data) {
         this.data = data;
+        return this;
     }
 }
